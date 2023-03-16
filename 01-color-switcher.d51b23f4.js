@@ -1,2 +1,0 @@
-const e=document.querySelector("button data-start"),t=document.querySelector("button data-stop");console.log(e),console.log(t);let o=null;e.addEventListener("click",(()=>{o=setInterval((()=>{console.log(`I love async JS!  ${Math.random()}`)}),1e3)})),t.addEventListener("click",(()=>{clearInterval(o),console.log(`Interval with id ${o} has stopped!`)}));
-//# sourceMappingURL=01-color-switcher.d51b23f4.js.map
