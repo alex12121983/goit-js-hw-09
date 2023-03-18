@@ -37,6 +37,9 @@ function timer() {
     refs.outputHours.textContent = addLeadingZero(hours);
     refs.outputMinutes.textContent = addLeadingZero(minutes);
     refs.outputSeconds.textContent = addLeadingZero(seconds);
+    if (deltaTime <= 999) {
+      clearInterval(intervalId);
+    }
   }, 1000);
 }
 function convertMs(ms) {
